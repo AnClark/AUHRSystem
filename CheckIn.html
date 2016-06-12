@@ -8,7 +8,24 @@
     <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="hrHome.css" />
     <script src="main.js"></script>
-
+	
+	<script>
+	function validate_input(){
+		var inputs=document.getElementsByTagName("input");
+		var i=0;
+	
+		for(i = 0; i < inputs.length; i++){
+			if(inputs[i].value == ''){
+				alert("啊哦~所有项目都要填哦！");
+				inputs[i].focus();
+				return;
+			}
+		}
+	
+		document.getElementById("main").submit();
+	}
+	</script>
+	
 </head>
 <body>
 <div class="header">HRmanage<div class="headphoto"><img src="image/1.png" width="40" height="40"></div>
@@ -38,70 +55,71 @@
 <div class="body_whole">
 <div class="container">
 
-
+<form id="main" method="post" action="core/checkin.core.php">
 <div class="main">
-   <form class="bs-example bs-example-form" role="form">
+   <div class="bs-example bs-example-form" role="form">
       <div class="input-group">
          <span class="input-group-addon">姓名</span>
-         <input type="text" class="form-control">
+         <input name="Name" type="text" class="form-control">
       </div>
       </br>
  <div class="input-group">
          <span class="input-group-addon">社联编号</span>
-         <input type="text" class="form-control">
+         <input name="AUID" type="text" class="form-control">
       </div>
       <br>
  <div class="input-group">
       <span class="input-group-addon">寝室楼栋</span>
-      <input type="text" class="form-control" />
+      <input name="Dormbuild" type="text" class="form-control" />
  </div>
       <br> <div class="input-group">
          <span class="input-group-addon">部门</span>
-         <input type="text" class="form-control">
+         <input name="Department" type="text" class="form-control">
       </div>
       <br>
 	    <div class="input-group">
          <span class="input-group-addon">职务</span>
-         <input type="text" class="form-control">
+         <input name="Occupation" type="text" class="form-control">
       </div>
       <br>
-   </form>
- <form action="" method="get">
+   </div>
+ <div>
             性别：<br />
-            <input name="sex" id="admin" type="radio" value="user" />
+         <input name="Gender" id="admin" type="radio" value="user" checked="checked"/>
             <label for="admin">男</label>
-            <input name="sex" id="user" type="radio" value="user" />
+         <input name="Gender" id="user" type="radio" value="user" />
             <label for="user">女</label>
-        </form>
+        </div>
    <div class="input-group">
          <span class="input-group-addon">院系</span>
-         <input type="text" class="form-control">
+         <input name="Faculty" type="text" class="form-control">
       </div>
 </br>
 <div class="input-group">
          <span class="input-group-addon">班级</span>
-         <input type="text" class="form-control">
+         <input name="Class" type="text" class="form-control">
       </div>
 </br>
 <div class="input-group">
          <span class="input-group-addon">组别</span>
-         <input type="text" class="form-control">
+         <input name="Group" type="text" class="form-control">
       </div>
       </br>
       <div class="input-group">
          <span class="input-group-addon">籍贯</span>
-         <input type="text" class="form-control">
+         <input name="Hometown" type="text" class="form-control">
       </div>
       </br>
       <div class="input-group">
          <span class="input-group-addon">入社联时间</span>
-         <input type="text" class="form-control">
+         <input name="ArrivalTime" type="date" class="form-control">
       </div>
       </br>
-      <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+      <button type="button" class="btn btn-primary" onclick="validate_input()" data-toggle="button" aria-pressed="false" autocomplete="off">
   提交
 </button>
 </div>
+</form>
 </div>
 </div>
 </body>

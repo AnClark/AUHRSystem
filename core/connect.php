@@ -9,5 +9,8 @@
 	global $con;
 
 	define('DB_ADMINS','test_userinfo');
+	define('DB_HR','test_userinfo');
 	define('TBL_ADMINS','tblhruser');
+	define('TBL_HR','tblhr');
+	
 ?>

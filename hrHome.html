@@ -8,7 +8,12 @@
     <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="hrHome.css" />
     <script src="main.js"></script>
-
+	
+	<script>
+	function relocate(target){
+		location.href = target;
+	}
+	</script>
 </head>
 <body>
 <div class="header">HRmanage<div class="headphoto"><img src="image/1.png" width="40" height="40"></div>
@@ -38,7 +43,7 @@
 <div class="body_whole">
 <div class="btn-group btn-group-justified" role="group" aria-label="...">
   <div class="btn-group" role="group">
-    <button type="button" class="btn btn-default">信息录入</button>
+    <button type="button" class="btn btn-default" onclick="relocate('CheckIn.html')">信息录入</button>
   </div>
   <div class="btn-group" role="group">
     <button type="button" class="btn btn-default">信息查询</button>

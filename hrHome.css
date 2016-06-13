@@ -74,7 +74,7 @@ body{
 }
 .body_whole
 {
-	float:left;
+	float:right;
     background-color:rgb(232,244,248);
     width:78%;
     height:900px;

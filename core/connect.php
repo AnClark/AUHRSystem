@@ -6,6 +6,8 @@
 	$con = mysql_connect() 
 		or die("连接数据库失败！<br>" . mysql_error());
 		
+	mysql_query("SET NAMES utf8", $con);
+		
 	global $con;
 
 	define('DB_ADMINS','test_userinfo');

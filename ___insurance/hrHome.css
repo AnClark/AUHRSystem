@@ -1,8 +1,6 @@
 body{
     margin:0px;
     background-size:100%;
-	
-	font-family: 微软雅黑, Microsoft Yahei UI;
 }
 @font-face {
     font-family: FontAwesome;
@@ -93,35 +91,21 @@ body{
 	height:100%;
 	width:100%;
 	
-/* 	padding-left:260px;
-	padding-top:80px; */
-}
-
-.body-main
-{
-	background-color:rgb(232,244,248);
-	margin-top:50px;
-	margin-left:230px;
-	
-	padding-top:0px;
-	padding-left:20px;
-	
-	height:100%;
+	padding-left:260px;
+	padding-top:80px;
 }
 
 .form-line
 {
-	margin-left:30px;
 	margin-bottom: 30px;
 	height:34px;
-	
 }
 
 
 .form-indicator
 {
 	
-	
+	height:110%;
 	padding:8px 10px 8px 10px;
 	
 	border-style:solid;
@@ -129,7 +113,8 @@ body{
 	border-color:rgb(204,204,204);
 	border-radius: 5px;
 	background-color:rgb(238,238,238);
-	
+/* 	width:100px; */
+	width:10%;
 }
 
 .form-textbox
@@ -144,6 +129,75 @@ body{
 }
 
 
+/* The following CSS styles act bad. Deprecated. 
+.body_whole
+{
+	float: right;
+	background-color: rgb(232,244,248);
+	width: 80%;
+	height: 900px;
+	color: black;
+	overflow: hidden;
+	padding-top: 63px;
+	padding-right: 300px;
+	padding-left: 0px;
+	padding-bottom: 48px;
+}
+
+.body_section1
+{
+	margin:40px auto 0px 40px;
+	clear:right;
+	float:left;
+    width:80px;
+    height:35px;
+    color: black;
+    font-size: 28px;
+	font-family:Dekar1;
+	padding:0;
+	font-weight:100;
+}
+.body_section2
+{
+	clear:left;
+	margin:20px auto auto 40px;
+	background-color:rgb(120,205,81);
+	float:left;
+    width:340px;
+    height:130px;
+    color: white;
+    font-size: 28px;
+	font-family:Dekar1;
+	padding:20px;
+	font-weight:100;
+}
+.body_section3
+{
+	margin:20px auto auto 40px;
+	background-color:rgb(234,232,116);
+	float:left;
+    width:340px;
+    height:130px;
+    color: white;
+    font-size: 28px;
+	font-family:Dekar1;
+	padding:20px;
+	font-weight:100;
+}
+.body_section4
+{
+	margin:20px auto auto 40px;
+	background-color:rgb(80,204,240);
+	float:left;
+    width:340px;
+    height:130px;
+    color: white;
+    font-size: 28px;
+	font-family:Dekar1;
+	padding:20px;
+	font-weight:100;
+}
+*/
 .dic
 {
 	width:300px;
@@ -152,14 +206,5 @@ body{
 	margin:50px auto auto auto;
 }
 	
-.section-title-line
-{
-	text-align:right;
-	font-size:2.5em;
-	padding-top:30px;
-	padding-right:20px;
-	padding-bottom:30px;
-	
-	color:rgb(170,170,171);
-}
+
 

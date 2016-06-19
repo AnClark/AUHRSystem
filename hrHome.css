@@ -163,3 +163,28 @@ body{
 	color:rgb(170,170,171);
 }
 
+.user-indicator
+{
+	float:right;
+	z-index:222;
+	margin-left:20px;
+	margin-right:10px;
+	font-size:20px;
+	font-family: Microsoft Yahei UI, 微软雅黑;
+	color:white;
+}
+
+.usermenu
+{
+	position:absolute;
+	top:50px;
+	right:0px;
+	background-color:black;
+	
+}
+.usermenu-line
+{
+	color:white;
+	font-size:10px;
+	height:30px;
+}

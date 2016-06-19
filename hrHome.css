@@ -179,12 +179,26 @@ body{
 	position:absolute;
 	top:50px;
 	right:0px;
+	
+	padding-left:40px;
+	padding-right:20px;
+	
 	background-color:black;
 	
+	display: none;
+
 }
 .usermenu-line
 {
+	margin-top:20px;
+	margin-bottom:20px;
 	color:white;
-	font-size:10px;
+	font-size:18px;
 	height:30px;
+	
+		overflow: hidden;
+}
+.usermenu-line a
+{
+	color:cyan;
 }

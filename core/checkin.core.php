@@ -1,5 +1,6 @@
 <?php
 	if($_SERVER["REQUEST_METHOD"] != "POST")
+	//if(!isset($_POST['submit']))
 		die("<h1>非法请求！</h1>");
 
 	require("connect.php");
@@ -41,16 +42,25 @@
 	
 	try{
 		if(mysql_query($sql)){
-			echo "<script> alert('已录入数据'); </script>";
+			//echo "<script> alert('已录入数据'); </script>";
+			session_start();
+			$_SESSION['checkin_result'] = "SUCCESS";
+			echo "<script> location.href = '../CheckIn.php'; </script>";
 		}
 		else{
-			echo mysql_error();
-			//echo "<script> alert('操作失败：$errmsg'); </script>";
-			echo "<script> alert('操作失败'); </script>";
+			//echo "<script> alert('操作失败'); </script>";			
+			session_start();
+			$_SESSION['checkin_result'] = "FAIL";
+			$_SESSION['checkin_errmsg'] = mb_convert_encoding(mysql_error(),"UTF-8");
+			echo "<script> location.href = '../CheckIn.php'; </script>";			
+
 		}
 	}
 	catch(Exception $e){
-		$errmsg = $e->getMessage;
+		session_start();
+		$_SESSION['checkin_result'] = "ERROR";
+		$_SESSION['checkin_errmsg'] = $errmsg;
+		echo "<script> location.href = '../CheckIn.php'; </script>";	
 		echo "<script> alert('出现错误：$errmsg'); </script>";
 	}
 	

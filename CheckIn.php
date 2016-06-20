@@ -43,32 +43,11 @@
 </head>
 <body>
 
-<!--		【用户信息处理之 PHP 代码】		-->
+<!--		【内嵌 PHP 代码，实现奇妙功能！】		-->
 <?php
-session_start();
-
-//检测是否登录，若没登录则转向登录界面
-if(!isset($_SESSION['userid'])){
-	echo "<script> alert('你还未登录，请先登录后再使用！'); </script>";
-	echo "<script> location.href = './login.html'; </script>";
-	
-    //header("Location: login.html");
-    exit();
-}
-
-$userid = $_SESSION['userid'];
-$username = $_SESSION['username'];
-$user_indicator_text = "你好,  " . $_SESSION['username'];
-
-switch($_SESSION['userlevel']){
-	case "user":
-		$user_level_text = "普通用户";
-		break;
-	case "admin":
-		$user_level_text = "高级用户";
-		break;
-}
-
+/***********	检验登录状态	***********/
+//为简洁起见，相关代码放入独立文件中
+include('core/logIdentify.php');
 ?>
 
 <!-----------------------页首部分----------------------->
@@ -122,7 +101,11 @@ switch($_SESSION['userlevel']){
 
 <div class="body-main">
 
-	<div class="section-title-line">个人信息</div>
+	<div class="section-title-line">个人信息
+		<button type="button" class="btn btn-primary headbutton-commit" onclick="validate_input()" data-toggle="button" aria-pressed="false" autocomplete="off" >
+		提交
+		</button>
+	</div>
 
 	<div class="form-line">
          <span class="form-indicator">姓名</span>
@@ -201,6 +184,26 @@ switch($_SESSION['userlevel']){
 </div>
 </form>
 </div>
+
+<?php
+/***********	条目录入结果反馈	***********/
+//录入后会自动弹出对话框
+if(isset($_SESSION['checkin_result'])){
+	switch($_SESSION['checkin_result']){
+		case "SUCCESS":
+			$result_text = "已录入数据";
+			break;
+		case "FAIL":
+			$result_text = "录入数据时发生错误：" . $_SESSION['checkin_errmsg'];
+			break;
+		case "ERROR":
+			$result_text = "系统错误：" . $_SESSION['checkin_errmsg'];
+			break;
+	}
+	unset($_SESSION['checkin_result']);
+	echo "<script> alert('$result_text'); </script>";
+}
+?>
 
 </body>
 </html>

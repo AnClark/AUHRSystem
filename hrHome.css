@@ -128,7 +128,21 @@ body{
 	padding:0;
 }
 
-
+.embedded-msgbox
+{
+	
+	top:50px;
+	margin-top:20px;
+	left:230px;
+	margin-left:100px;
+	z-index:995;
+	
+	background-color:black;
+	color:white;
+	border-radius:5px;
+	
+	display:none;
+}
 
 .form-line
 {
@@ -180,9 +194,11 @@ body{
 	padding-top:30px;
 	padding-left:20px;
 	padding-bottom:30px;
-	
+	padding-right:20px;
 	color:rgb(170,170,171);
 }
+
+
 
 .user-indicator
 {
@@ -222,4 +238,10 @@ body{
 .usermenu-line a
 {
 	color:cyan;
+}
+
+.headbutton-commit
+{
+	position: absolute;
+	right: 50px;
 }

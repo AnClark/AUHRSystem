@@ -102,7 +102,7 @@ switch($_SESSION['userlevel']){
 </div>
 
 <!-----------------------主体部分----------------------->
-<div class="body-basement">
+
 
 
 
@@ -729,7 +729,7 @@ Cikonss是纯CSS实现的响应式Icon，兼容IE8+。
 </div>
 
 
-</div>
+
 </div>
 </body>
 </html>

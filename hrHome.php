@@ -30,31 +30,11 @@
 </head>
 <body>
 
-<!--		【用户信息处理之 PHP 代码】		-->
+<!--		【内嵌 PHP 代码，实现奇妙功能！】		-->
 <?php
-session_start();
-
-//检测是否登录，若没登录则转向登录界面
-if(!isset($_SESSION['userid'])){
-	echo "<script> alert('你还未登录，请先登录后再使用！'); </script>";
-	echo "<script> location.href = './login.html'; </script>";
-	
-    //header("Location: login.html");
-    exit();
-}
-
-$userid = $_SESSION['userid'];
-$username = $_SESSION['username'];
-$user_indicator_text = "你好,  " . $_SESSION['username'];
-
-switch($_SESSION['userlevel']){
-	case "user":
-		$user_level_text = "普通用户";
-		break;
-	case "admin":
-		$user_level_text = "高级用户";
-		break;
-}
+/***********	检验登录状态	***********/
+//为简洁起见，相关代码放入独立文件中
+include('core/logIdentify.php');
 
 ?>
 
@@ -108,35 +88,39 @@ switch($_SESSION['userlevel']){
 
 <div class="body-main">
 
+	<div class="container">
+		<div class="page-header">
+			<h2>华中科技大学学生社团联合会</h2>
+			<h3>人力资源管理系统</h3>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 col-md-4 col-lg-3 ">
+			  <div class="thumbnail" style="height: 334px;">
+				<a href="InfoInquiry0.php" title="信息查询"><img class="lazy" src="image/productCore.svg" width="300" height="150" ></a>
+				<div class="caption">
+				  <h3>
+					<a href="InfoInquiry0.php" title="信息查询"  >信息查询</a>
+				  </h3>
+				</div>
+			  </div>
+			</div>
 
-    <h2 class="bs-docs-featurette-title">为所有开发者、所有应用场景而设计。</h2>
-    <p class="lead">Bootstrap 让前端开发更快速、简单。所有开发者都能快速上手、所有设备都可以适配、所有项目都适用。</p>
+			<div class="col-sm-6 col-md-4 col-lg-3 ">
+			  <div class="thumbnail" style="height: 334px;">
+				<a href="CheckIn.php" title="信息录入"><img class="lazy" src="image/productCore.svg" width="300" height="150" ></a>
+				<div class="caption">
+				  <h3>
+					<a href="CheckIn.php" title="信息录入"  >信息录入</a>
+				  </h3>
+				</div>
+			  </div>
+			</div>
+		</div>
+	</div>
 
-    <hr class="half-rule">
+</div>
 
-    <div class="row">
-      <div class="col-sm-4">
-        <img src="assets/img/sass-less.png" alt="Sass and Less support" class="img-responsive">
-        <h3>预处理脚本</h3>
-        <p>虽然可以直接使用 Bootstrap 提供的 CSS 样式表，不要忘记 Bootstrap 的源码是基于最流行的 CSS 预处理脚本 - <a href="../css/#less">Less</a> 和 <a href="../css/#sass">Sass</a> 开发的。你可以采用预编译的 CSS 文件快速开发，也可以从源码定制自己需要的样式。</p>
-      </div>
-      <div class="col-sm-4">
-        <img src="assets/img/devices.png" alt="Responsive across devices" class="img-responsive">
-        <h3>一个框架、多种设备</h3>
-        <p>你的网站和应用能在 Bootstrap 的帮助下通过同一份代码快速、有效适配手机、平板、PC 设备，这一切都是 CSS 媒体查询（Media Query）的功劳。</p>
-      </div>
-      <div class="col-sm-4">
-        <img src="assets/img/components.png" alt="Components" class="img-responsive">
-        <h3>特性齐全</h3>
-        <p>Bootstrap 提供了全面、美观的文档。你能在这里找到关于 HTML 元素、HTML 和 CSS 组件、jQuery 插件方面的所有详细文档。</p>
-      </div>
-    </div>
-
-    <hr class="half-rule">
-
-    <p class="lead">Bootstrap 是完全开源的。它的代码托管、开发、维护都依赖 GitHub 平台。</p>
-    <a href="https://github.com/twbs/bootstrap" class="btn btn-outline btn-lg">查看 GitHub 项目主页</a>
-  </div>
+ 
 
 </div>
 

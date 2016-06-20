@@ -10,6 +10,7 @@
     <script src="main.js"></script>
 	
 	<script>
+	/***********	表单验证&提交之一体代码  **********/
 	function validate_input(){
 		var inputs=document.getElementsByTagName("input");
 		var i=0;
@@ -24,14 +25,71 @@
 	
 		document.getElementById("main").submit();
 	}
+	
+	/***********	JQuery 特效代码  **********/
+	$(document).ready(function(){
+		$("#user-indicator").mouseover(function(){
+			$(".usermenu").slideToggle(500);
+		});
+		$("#user-indicator2").mouseover(function(){
+			$(".usermenu").slideToggle(500);
+		});
+		$(".usermenu").mouseleave(function(){
+			$(".usermenu").slideUp(500);
+		});
+	});
 	</script>
 	
 </head>
 <body>
 
-<!--  页首与导航部分 -->
-<div class="header">HRmanage<div class="headphoto"><img src="image/1.png" width="40" height="40"></div>
+<!--		【用户信息处理之 PHP 代码】		-->
+<?php
+session_start();
+
+//检测是否登录，若没登录则转向登录界面
+if(!isset($_SESSION['userid'])){
+	echo "<script> alert('你还未登录，请先登录后再使用！'); </script>";
+	echo "<script> location.href = './login.html'; </script>";
+	
+    //header("Location: login.html");
+    exit();
+}
+
+$userid = $_SESSION['userid'];
+$username = $_SESSION['username'];
+$user_indicator_text = "你好,  " . $_SESSION['username'];
+
+switch($_SESSION['userlevel']){
+	case "user":
+		$user_level_text = "普通用户";
+		break;
+	case "admin":
+		$user_level_text = "高级用户";
+		break;
+}
+
+?>
+
+<!-----------------------页首部分----------------------->
+<div class="header">HRmanage
+	<!--	用户名指示器	-->
+	<span class="user-indicator" id="user-indicator"><?php echo $user_indicator_text; ?></span>
+	<!--	头像占位符		-->
+	<div class="headphoto" id="user-indicator2">
+		<img src="image/1.png" width="40" height="40">
+	</div>
 </div>
+
+<!--  用户选项菜单 -->
+<div class="usermenu">
+	<div class="usermenu-line"><?php echo $user_level_text; ?></div>
+	<div class="usermenu-line">
+		<a href="core/logout.php">注销</a>
+	</div>
+</div>
+
+<!-----------------------导航部分----------------------->
 <div class="select">
     <div class="select_section1">
 <img src="image/privacy.svg">&nbsp;主页 <img src="image/ic_chevron_left.svg" align="right" style="padding-right:20px; padding-top:5px"></div>
@@ -55,7 +113,9 @@
 </div>
 </div>
 
-<!--  主体部分  -->
+
+
+<!-----------------------主体部分----------------------->
 <div class="body-basement">
 
 <form id="main" method="post" action="core/checkin.core.php">

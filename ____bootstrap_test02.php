@@ -108,7 +108,7 @@ switch($_SESSION['userlevel']){
 
 <div class="body-main">
 
-
+<div class="container">
     <h2 class="bs-docs-featurette-title">为所有开发者、所有应用场景而设计。</h2>
     <p class="lead">Bootstrap 让前端开发更快速、简单。所有开发者都能快速上手、所有设备都可以适配、所有项目都适用。</p>
 

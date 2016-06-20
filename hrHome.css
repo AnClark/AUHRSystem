@@ -1,7 +1,7 @@
 body{
     margin:0px;
     background-size:100%;
-	
+	background-color:rgb(232,244,248);
 	font-family: 微软雅黑, Microsoft Yahei UI;
 }
 @font-face {
@@ -16,6 +16,30 @@ body{
     font-family: Dekar1;
     src: url(DekarLight.otf);
 }
+
+.body-basement
+{
+	position:relative;
+
+	height:100%;
+	width:100%;
+	
+/* 	padding-left:260px;
+	padding-top:80px; */
+}
+
+.body-main
+{
+	background-color:rgb(232,244,248);
+	margin-top:50px;
+	margin-left:230px;
+	
+	padding-top:0px;
+	padding-left:20px;
+	
+	height:100%;
+}
+
 .header{
 	position:fixed;
 	top:0px;
@@ -33,6 +57,23 @@ body{
 	
 	z-index:999;
 }
+
+.home-button-box
+{
+	/* For debug */
+	border-style:solid;
+	border-color:black;
+	
+	text-align:center;
+	margin: 0 auto;
+}
+
+.home-button
+{
+	height:90px;
+	width:160px;
+}
+
 .select{
 	position:fixed;
 	top:50px;
@@ -47,6 +88,7 @@ body{
     color: white;
     font-size: 18px;
 
+	z-index:996;
 }
 .select_section1{
     margin-left:0px;
@@ -86,28 +128,7 @@ body{
 	padding:0;
 }
 
-.body-basement
-{
-	position:relative;
 
-	height:100%;
-	width:100%;
-	
-/* 	padding-left:260px;
-	padding-top:80px; */
-}
-
-.body-main
-{
-	background-color:rgb(232,244,248);
-	margin-top:50px;
-	margin-left:230px;
-	
-	padding-top:0px;
-	padding-left:20px;
-	
-	height:100%;
-}
 
 .form-line
 {
@@ -154,10 +175,10 @@ body{
 	
 .section-title-line
 {
-	text-align:right;
+	text-align:left;
 	font-size:2.5em;
 	padding-top:30px;
-	padding-right:50px;
+	padding-left:20px;
 	padding-bottom:30px;
 	
 	color:rgb(170,170,171);
@@ -176,7 +197,7 @@ body{
 
 .usermenu
 {
-	position:absolute;
+	position:fixed;
 	top:50px;
 	right:0px;
 	
@@ -186,7 +207,7 @@ body{
 	background-color:black;
 	
 	display: none;
-
+	z-index: 999;
 }
 .usermenu-line
 {

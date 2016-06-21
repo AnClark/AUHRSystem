@@ -118,7 +118,13 @@ include('core/logIdentify.php');
          <input name="AUID" type="text" class="form-textbox">
 		 <br>
 	</div>
-      
+
+	 <div class="form-line">
+         <span class="form-indicator">生日</span>
+         <input name="Birthday" type="date" class="form-textbox">
+      </br>
+	</div>
+	
 	<div class="form-line">
 			<span class="form-indicator">寝室楼栋</span>
 			<input name="Dormbuild" type="text" class="form-textbox">
@@ -152,6 +158,12 @@ include('core/logIdentify.php');
 		 </br>
 	</div>
 
+	<div class="form-line">
+         <span class="form-indicator">年级</span>
+         <input name="Grade" type="text" class="form-textbox">
+		 </br>
+	</div>		
+	
 	<div class="form-line">
          <span class="form-indicator">班级</span>
          <input name="Class" type="text" class="form-textbox">

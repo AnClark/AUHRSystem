@@ -6,15 +6,15 @@ body{
 }
 @font-face {
     font-family: FontAwesome;
-    src: url(FontAwesome.otf);
+    src: url(font/FontAwesome.otf);
 }
 @font-face {
     font-family: Dekar;
-    src: url(Dekar.otf);
+    src: url(font/Dekar.otf);
 }
 @font-face {
     font-family: Dekar1;
-    src: url(DekarLight.otf);
+    src: url(font/DekarLight.otf);
 }
 
 .body-basement

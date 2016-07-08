@@ -2,12 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1de3ecc-c247-4c98-92ee-ec03cd13213b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/ie/arrow-bottom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/ie/arrow-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/ie/header-line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/ie/icon-fork.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/ie/icon-github.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/ie/icon-lab.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/ie/icon-options.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/ie/icon-star.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/montserrat-bold.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/montserrat-bold.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/montserrat-bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/montserrat-bold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/montserrat-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/montserrat-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/montserrat-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/montserrat-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font/Dekar.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font/DekarLight.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hrHome.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/icheck" afterPath="$PROJECT_DIR$/icheck" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CheckIn.php" afterPath="$PROJECT_DIR$/CheckIn.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commonElem/README.md" afterPath="$PROJECT_DIR$/commonElem/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commonElem/head_and_nav.php" afterPath="$PROJECT_DIR$/commonElem/head_and_nav.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/checkin.core.php" afterPath="$PROJECT_DIR$/core/checkin.core.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrHome.php" afterPath="$PROJECT_DIR$/hrHome.php" />
     </list>
     <ignored path="AUHRSystem.iws" />
@@ -30,27 +48,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="____bootstrap_test02.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/____bootstrap_test02.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CheckIn.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CheckIn.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+            <state relative-caret-position="325">
+              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkin.core.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="checkin.core.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/checkin.core.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-625">
@@ -99,8 +107,18 @@
       <file leaf-file-name="hrHome.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hrHome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="21" selection-end-column="6" />
+            <state relative-caret-position="400">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hrHome.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/hrHome.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -148,11 +166,12 @@
         <option value="$PROJECT_DIR$/tpl/home.tpl" />
         <option value="$PROJECT_DIR$/core/loginquery.php" />
         <option value="$PROJECT_DIR$/commonElem/README.md" />
-        <option value="$PROJECT_DIR$/hrHome.php" />
         <option value="$PROJECT_DIR$/commonElem/head_and_nav.php" />
         <option value="$PROJECT_DIR$/commonElem/jq_anim.js" />
-        <option value="$PROJECT_DIR$/CheckIn.php" />
         <option value="$PROJECT_DIR$/core/checkin.core.php" />
+        <option value="$PROJECT_DIR$/CheckIn.php" />
+        <option value="$PROJECT_DIR$/hrHome.php" />
+        <option value="$PROJECT_DIR$/css/hrHome.css" />
       </list>
     </option>
   </component>
@@ -218,6 +237,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="AUHRSystem" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AUHRSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AUHRSystem" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -310,12 +343,12 @@
       <workItem from="1467203514104" duration="1341000" />
       <workItem from="1467895231601" duration="2680000" />
       <workItem from="1467902188740" duration="224000" />
-      <workItem from="1467943164297" duration="1325000" />
+      <workItem from="1467943164297" duration="1997000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5917000" />
+    <option name="totallyTimeSpent" value="6589000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -361,14 +394,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/____bootstrap_test02.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CheckIn.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -672,14 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hrHome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="21" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/commonElem/head_and_nav.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
@@ -722,14 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CheckIn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/connect.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -747,6 +756,30 @@
             <marker date="1467944211130" expanded="true" signature="175:447" ph="INSERT INTO ${TBL_HR}... " />
             <marker date="1467944211130" expanded="true" signature="175:706" ph="INSERT INTO ${TBL_HR}... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CheckIn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrHome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/hrHome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -14,18 +14,12 @@
 	function relocate(target){
 		location.href = target;
 	}
+	
+	<!--		【加载 PHP 可复用代码】		-->
 	/***********	JQuery 特效代码  **********/
-	$(document).ready(function(){
-		$("#user-indicator").mouseover(function(){
-			$(".usermenu").slideToggle(500);
-		});
-		$("#user-indicator2").mouseover(function(){
-			$(".usermenu").slideToggle(500);
-		});
-		$(".usermenu").mouseleave(function(){
-			$(".usermenu").slideUp(500);
-		});
-	});
+	<?php
+		include('commonElem/jq_anim.js');
+	?>
 	</script>
 </head>
 <body>

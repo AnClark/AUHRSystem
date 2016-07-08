@@ -25,19 +25,13 @@
 	
 		document.getElementById("main").submit();
 	}
-	
+
+	<!--		【加载 PHP 可复用代码】		-->
 	/***********	JQuery 特效代码  **********/
-	$(document).ready(function(){
-		$("#user-indicator").mouseover(function(){
-			$(".usermenu").slideToggle(500);
-		});
-		$("#user-indicator2").mouseover(function(){
-			$(".usermenu").slideToggle(500);
-		});
-		$(".usermenu").mouseleave(function(){
-			$(".usermenu").slideUp(500);
-		});
-	});
+	<?php
+		include('commonElem/jq_anim.js');
+	?>
+		
 	</script>
 	
 </head>
@@ -78,6 +72,18 @@ include('commonElem/head_and_nav.php');
 		 <br>
 	</div>
 
+	<div class="form-line">
+		<span class="form-indicator">手机</span>
+		<input name="Mobile" type="text" class="form-textbox">
+		<br>
+	</div>
+
+	<div class="form-line">
+		<span class="form-indicator">QQ</span>
+		<input name="QQ" type="text" class="form-textbox">
+		<br>
+	</div>
+	
 	 <div class="form-line">
          <span class="form-indicator">生日</span>
          <input name="Birthday" type="date" class="form-textbox">

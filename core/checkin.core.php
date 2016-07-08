@@ -10,6 +10,8 @@
 	$sql = "INSERT INTO " . TBL_HR . " (
 		Name,
 		Gender,
+		Mobile,
+		QQ,
 		Birthday,
 		Faculty,
 		Class,
@@ -25,6 +27,8 @@
 		VALUES (
 		'$_POST[Name]',
 		'$_POST[Gender]',
+		'$_POST[Mobile]',
+		'$_POST[QQ]',
 		'$_POST[Birthday]',
 		'$_POST[Faculty]',
 		'$_POST[Class]',
